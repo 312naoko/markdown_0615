@@ -121,4 +121,3 @@ export const actions = {
     }
   },
 }
-echo エラー原因の一文 >> store/memos.js
