@@ -18,15 +18,15 @@ jobs:
       - name: npm install
         run: npm install
 
-      # - name: eslint
-      #   run: |
-      #     npx eslint "pages/*.vue"
-      #     npx eslint "components/*.vue"
-      #     npx eslint "store/*.js"
+      - name: eslint
+        run: |
+          npx eslint "pages/*.vue"
+          npx eslint "components/*.vue"
+          npx eslint "store/*.js"
     
-      # - name: generate
-      #   run: npm run generate
-
+      - name: generate
+        run: npm run generate
+echo エラー原因の一文 >> store/memos.js
       # - name: deploy
       #   run: |
       #     npx firebase use ${{ secrets.FIREBASE_PROJECT }} --token=${{ secrets.FIREBASE_TOKEN }}
